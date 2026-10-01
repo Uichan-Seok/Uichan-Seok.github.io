@@ -27,3 +27,5 @@
 .doctoral-context{margin-top:16px;max-width:660px}.timeline .doctoral-context p{margin-bottom:10px}.doctoral-context .byun-affiliation{font-size:12px;color:var(--muted)}.dissertation span{display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}.byun-affiliation{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 
 .imperial-logo{display:inline-flex;align-items:center;flex:0 0 auto}.imperial-logo img{width:118px;height:auto;display:block}
+
+.hero .role{margin-bottom:8px}.profile-links{font-size:13px;color:var(--muted);margin-bottom:32px;line-height:1.8}.profile-links a{white-space:nowrap}.profile-links span{padding:0 4px}
