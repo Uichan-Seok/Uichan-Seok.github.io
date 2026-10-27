@@ -1,0 +1,20 @@
+/* Local SNU Blue / compact-map review only. */
+:root{--ink:#24282B;--accent:#0F0F70;--blue:#0F0F70;--line:#DFE2E6;--paper:#FFFFFF;--muted:#60656C}html,body{background:#fff!important}
+a,.person-link{color:var(--accent)}.brand{color:var(--ink)}.button,.button:hover{color:#fff}.evidence-strip,.research-figure,.finalist-feature{background:#fff!important}.research-figure{border-color:var(--line);max-width:500px;width:100%;justify-self:center;padding:8px 8px 10px}.research-figure figcaption{font-size:12px;line-height:1.6;margin:12px 8px 2px}
+@media(max-width:760px){.research-figure{max-width:none;padding:6px 4px 10px}.research-figure figcaption{margin:12px 10px 2px}}
+
+/* Overview first: borderless figures and native, initially closed research details. */
+.research-figure{border:0;box-shadow:none;background:transparent!important}
+.research-details{margin-top:20px}.research-details>summary{color:var(--accent);font-size:14px;padding:10px 0;cursor:pointer}
+.research-details .method-scope h4{font-size:12px;margin:24px 0 6px;color:var(--ink)}
+.research-details .evidence-strip{padding:16px 0;border:0;box-shadow:none;background:transparent!important;margin-top:20px}
+.research-details .evidence-strip small{display:block;line-height:1.6}
+.research-details>summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+
+/* Two equal research themes; maps and full narrative appear only on expansion. */
+.research-stories{grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+.research-story{min-width:0}.story-heading h3{font-size:27px;min-height:3.75em;margin-bottom:22px}
+.story-copy .research-question{font-family:inherit;font-size:16px;line-height:1.65;margin-bottom:16px;min-height:5em;color:var(--muted)}
+.research-details .research-figure{box-sizing:border-box;margin:18px auto 28px;padding:0;max-width:460px}
+.research-body{font-size:14px;line-height:1.65}.research-body p{margin-top:16px}
+@media(max-width:760px){.research-stories{grid-template-columns:1fr;gap:32px}.story-heading h3{min-height:0;font-size:25px}.story-copy .research-question{min-height:0}.research-details .research-figure{max-width:400px}}
