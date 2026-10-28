@@ -42,3 +42,9 @@ a,.person-link{color:var(--accent)}.brand{color:var(--ink)}.button,.button:hover
 /* Hide only Fig. 4(b)'s decorative raster frame; original pixels/file remain intact.
    Natural 544x527 image: top2px, right2px, bottom1px, left1px. */
 img[src$="/seok-2025-fig4b.jpeg"]{clip-path:inset(0.3795066414% 0.3676470588% 0.1897533207% 0.1838235294%)}
+
+/* Suppress the subpixel left-edge fringe; retain both original latitude-label bands. */
+img[src$="/seok-2025-fig4b.jpeg"]{
+  -webkit-mask-image:linear-gradient(to right,transparent 1.5px,#000 1.5px),linear-gradient(to bottom,transparent 5.88%,#000 5.88% 9.68%,transparent 9.68% 67.17%,#000 67.17% 71.16%,transparent 71.16%);
+  mask-image:linear-gradient(to right,transparent 1.5px,#000 1.5px),linear-gradient(to bottom,transparent 5.88%,#000 5.88% 9.68%,transparent 9.68% 67.17%,#000 67.17% 71.16%,transparent 71.16%);
+}
