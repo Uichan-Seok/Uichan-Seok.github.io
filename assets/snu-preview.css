@@ -38,3 +38,7 @@ a,.person-link{color:var(--accent)}.brand{color:var(--ink)}.button,.button:hover
 .figure-dialog{box-sizing:border-box;width:min(1200px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:calc(100vh - 24px);padding:20px;border:0;background:#fff;color:var(--ink)}.figure-dialog::backdrop{background:rgba(15,15,50,.65)}
 .figure-dialog-toolbar{display:flex;gap:16px;align-items:start;justify-content:space-between;margin-bottom:16px}.figure-dialog-toolbar h2{font:600 16px/1.4 Arial,sans-serif;margin:0}.figure-dialog-toolbar>div{display:flex;gap:8px;flex-shrink:0}.figure-dialog button{font:inherit;font-size:13px;border:1px solid var(--accent);background:#fff;color:var(--accent);padding:8px 12px;cursor:pointer;min-height:44px}.figure-dialog button:focus-visible,.figure-stage:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.figure-stage{max-height:65vh;overflow:auto;overscroll-behavior:contain}.figure-stage img{display:block;max-width:100%;height:auto;margin:0 auto}.figure-stage.is-original img{max-width:none;margin:0}.figure-dialog>p{font-size:12px;line-height:1.65;margin:16px 0 0}
 @media(max-width:760px){.figure-dialog{padding:14px}.figure-dialog-toolbar{flex-direction:column;gap:10px}.figure-dialog-toolbar h2{font-size:14px}}
+
+/* Hide only Fig. 4(b)'s decorative raster frame; original pixels/file remain intact.
+   Natural 544x527 image: top2px, right2px, bottom1px, left1px. */
+img[src$="/seok-2025-fig4b.jpeg"]{clip-path:inset(0.3795066414% 0.3676470588% 0.1897533207% 0.1838235294%)}
